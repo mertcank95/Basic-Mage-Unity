@@ -78,7 +78,7 @@ public class PlayerOnClick : MonoBehaviour
     {
         if (!finishedMovement)
         {
-            if (!anim.IsInTransition(0) && !anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.8f) //IsInTransition = geçiþ sürcecinde deðilse//base layer = 0.layer
+            if (!anim.IsInTransition(0) && !anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.8f) 
             {
                 finishedMovement = true;
             }

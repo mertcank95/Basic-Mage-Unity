@@ -65,7 +65,6 @@ public class SkillEffect : MonoBehaviour
             if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
             {
                 Vector3 lastPos = hit.point;
-                //lastPos.y = 0.10f;
                 Instantiate(skillEffect, lastPos, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(sound, lastPos);
 
